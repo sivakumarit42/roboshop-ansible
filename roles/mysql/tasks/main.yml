@@ -1,0 +1,3 @@
+- name: Print Mysql
+  debug:
+    msg: mysql
