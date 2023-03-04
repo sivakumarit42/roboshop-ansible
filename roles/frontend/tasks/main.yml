@@ -3,7 +3,7 @@
     name: nginx
     state: installed
 
-- name: Removing Old Content(ansible removes directory-it cant delete html file)
+- name: Removing Old Content
   ansible.builtin.file:
     path: /usr/share/nginx/html
     state: absent
