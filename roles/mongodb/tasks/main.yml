@@ -1,19 +1,4 @@
 
-#print_head "Update MongoDB lisiting Address"
-#sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf  ##update /etc/mongod.conf from 127.0.0.1 to 0.0.0.0
-#status_check $?
-#
-#print_head "enabling mongodb"
-#systemctl enable mongod &>>${log_file}
-#status_check $?
-#
-#print_head "restart mongodb"
-#systemctl restart mongod &>>${log_file}
-#status_check $?
-#
-##update /etc/mongod.conf from 127.0.0.1 to 0.0.0.0
-
-
 - name: Setup MongoDB YUM repo file
   ansible.builtin.copy:
     src: mongodb.repo
