@@ -30,5 +30,5 @@ scrape_configs:
 
   - job_name: "test"
     static_configs:
-      - targets: ["172.31.2.142:9100"]
+      - targets: ["172.31.7.215:9100"]
 
