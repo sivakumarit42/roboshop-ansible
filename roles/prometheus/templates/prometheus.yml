@@ -27,4 +27,6 @@ scrape_configs:
           - name: "tag:Monitor"           # "tag:Monitor is keyword
             values: ["yes"]
 
-
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        target_label: name
