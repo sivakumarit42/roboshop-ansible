@@ -14,4 +14,4 @@ groups:
         labels:
           severity: critical
         annotations:
-          summary: Server Down
+          summary: High CPU Usage
