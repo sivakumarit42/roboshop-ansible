@@ -8,4 +8,4 @@ groups:
           severity: critical
           appName: cart
         annotations:
-          summary: Service Down on some server - Service Name-cart
+          summary: Service Down on some server - Service Name-cart.service
