@@ -5,13 +5,13 @@
 
 - name: Install Filebeat
   ansible.builtin.yum:
-    name: filebeat                    //no need to install filebeat in elk server
+    name: filebeat
     state: installed
 
 - name: Copy filebeat configuration
   ansible.builtin.template:
     src: filebeat.yml
-    dest: /etc/filebeat/filebeat.yml     // no need to install filebeat in elk
+    dest: /etc/filebeat/filebeat.yml
 
 - name: Restart Filebeat
   ansible.builtin.systemd:
