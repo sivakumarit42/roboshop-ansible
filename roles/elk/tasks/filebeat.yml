@@ -5,7 +5,7 @@
 
 - name: Install Filebeat
   ansible.builtin.yum:
-    name: filebeat
+    name: filebeat                    //no need to install filebeat in elk server
     state: installed
 
 - name: Copy filebeat configuration

@@ -29,7 +29,7 @@ filebeat.inputs:
 
     # Paths that should be crawled and fetched. Glob based paths.
     paths:
-      - /var/log/nginx/access.log
+      - {{ log_file }}
 
       #- c:\programdata\elasticsearch\logs\*
 
@@ -83,8 +83,8 @@ setup.template.settings:
 
 # Optional fields that you can specify to add additional information to the
 # output.
-#fields:
-#  env: staging
+fields:
+  component: {{ component }}
 
 # ================================= Dashboards =================================
 # These settings control loading the sample dashboards to the Kibana index. Loading
